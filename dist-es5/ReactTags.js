@@ -11,7 +11,8 @@ var KEYS = {
   TAB: 9,
   BACKSPACE: 8,
   UP_ARROW: 38,
-  DOWN_ARROW: 40
+  DOWN_ARROW: 40,
+  COMMA: 188,
 }
 
 var CLASS_NAMES = {
@@ -181,7 +182,7 @@ ReactTags.defaultProps = {
   suggestions: [],
   autofocus: true,
   autoresize: true,
-  delimiters: [KEYS.TAB, KEYS.ENTER],
+  delimiters: [KEYS.TAB, KEYS.ENTER, KEY.COMMA],
   minQueryLength: 2,
   maxSuggestionsLength: 6,
   allowNew: false,
